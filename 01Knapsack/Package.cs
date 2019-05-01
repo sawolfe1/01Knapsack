@@ -6,6 +6,7 @@ namespace _01Knapsack
     {
         public int Weight { get; set; }
         public int Value { get; set; }
+        public double Fitness => Value / (double)Weight;
 
         public Package()
         {

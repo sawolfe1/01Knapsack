@@ -56,7 +56,7 @@ namespace _01Knapsack
         public int GetTotalWeight(List<Package> packages)
         {
             var totalWeight = 0;
-            for (var i = 0; i < MaxCapacity - 1; i++)
+            for (var i = 0; i < MaxCapacity; i++)
             {
                 var package = packages[i];
                 if (BitString[i] == '1')
